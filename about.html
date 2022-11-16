@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/home/doctor-img.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/style/tailwind.style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/responsive/responsive.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'>
+
+    <title>Project || </title>
+</head>
+<body style="background-color: #F1EAE3;">
+
+
+    <!-- // >> Loading Start // -->
+    <div class="_loading">
+        <div id="_first_loading" class="_loading_name flex flex-col">
+            <h1 id="starter">Eduardo</h1>
+            <div class="_loading_bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+        <div id="_second_loading" class="_loading_logo">
+            <h1 style="color: #2E2A28;" class="_loading_about_me_text">
+                About Me
+            </h1>
+        </div>
+    </div>
+    <!-- // >> Loading End / -->
+
+    <!-- // >> OffCanva Start // -->
+    <div class="_offCanva">
+        <div class="_offCanvaContent">
+            <div class="_offCanva_left_and_right_container">
+                <div id="_gsap_offCanvaLeft" class="_offCanva_left_element"></div>
+                <div id="_gsap_offCanvaRight" class="_offCanva_right_element" style="background: url(./assets/img/offcanva/offcanva.png);"></div>
+            </div>
+            <div id="_gsap_offCanva_links" class="_offCanva_links">
+                <div class="_container">
+                    <div class="_offCanva_links_content">
+                        <ul id="_offCanvaSplitText" class="_links">
+                            <li class="_links_item"><a data-cursor="-icon" href="/">Home</a></li>
+                            <li class="_links_item"><a data-cursor="-icon" class="_active" href="/about.html">Dr. Eduardo Raulino</a></li>
+                            <li class="_links_item"><a data-cursor="-icon" href="/lipo.html">Lipo Ultra HD Ugraft</a></li>
+                            <li class="_links_item"><a data-cursor="-icon" href="/">Agendar consulta</a></li>
+                        </ul>
+                        <div class="_offCanvaContact">
+                            <div class="_contact_item">
+                                <span class="_contact_title">This is off Canva title</span>
+                                <ul id="_offCanvaSplitText" class="_contact_details">
+                                    <li class="_contact_details_item">(47) 99670-0099</li>
+                                    <li class="_contact_details_item">Seg - Sex, 08:00 - 17:00</li>
+                                    <li class="_contact_details_item">Fechado aos finais de semana</li>
+                                </ul>
+                            </div>
+                                <div class="_contact_item">
+                                    <span class="_contact_title">This is off Canva title</span>
+                                    <ul id="_offCanvaSplitText" class="_contact_details">
+                                        <li class="_contact_details_item">Av. Osvaldo Reis, 3385</li>
+                                        <li class="_contact_details_item">Edificio Riviera concept, Sala 1807</li>
+                                        <li class="_contact_details_item">Praia Brava - Itajai (SC)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- // >> MainNav start // -->
+    <nav class="mainNav">
+        <div class="_container">
+           <div class="mainNavContent">
+            <div class="_burger">
+                <div data-cursor="-icon" class="_burger_btn">
+                    <div class="_burger_icon"></div>
+                </div>
+            </div>
+            <div class="_logo _js_navLogo">
+                <a data-cursor="-icon" href="/">
+                    <img src="./assets/img/logo/raulino_logo.svg" alt="">
+                </a>
+            </div>
+            <div class="_lang_flags">
+                <div class="_lang_flags_items">
+                    <div data-cursor="-icon" class="_flag">
+                      <img src="./assets/img/flag//brazil_flag.svg" alt="">
+                    </div>
+                    <div data-cursor="-icon" class="_flag">
+                      <img src="./assets/img/flag/united_state_svg.svg" alt="">
+                    </div>
+                    <div data-cursor="-icon" class="_flag">
+                       <img src="./assets/img/flag/spain_flag.svg" alt="">
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+    </nav>
+    <!-- // >> MainNav End // -->
+
+
+<main class="about_smooth_scrollingWrapper">
+
+    <!-- // >> Hero showcase start // -->
+    <div class="_hero _about_page h-screen w-full" style="background: url(./assets/img/showcase/about_doctor_showcase_img.png) no-repeat center center/cover;">
+        <div class="_container h-full text-white">
+            <div class="_hero_content h-full w-full flex items-center justify-start">
+                <div class="_about_heading flex flex-col text-start">
+                    <span id="aboutHeroSplitText" >Referencia </span>
+                    <span id="aboutHeroSplitText" >internacional </span>
+                    <span id="aboutHeroSplitText" >em cirurgias</span>
+                    <span id="aboutHeroSplitText" >de contorno</span>
+                    <span id="aboutHeroSplitText" >corporal</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // >> Hero shwocase End ? -->
+
+
+     <!-- // >> About section Start // -->
+     <div class="_about">
+        <div class="_container">
+            <div class="_about_content py-36">
+                <div class="flex items-center flex-col">
+                    <span id="aboutSplitText" class="_about_title">Tecnica especializada em transformacao com <a data-cursor="-icon" class="underline" href="">aparencia natural,</a></span>
+                    <h1 class="_splitTextClient _about_heading flex flex-col">
+                        <span>Perfeitopara mulheres que querem se</span>
+                        <span>sentir mais atraentes em qualquer </span>
+                        <span>ambiente, em todos os momentos.</span>
+                    </h1>
+                    <div class="_about_doctor flex items-center">
+                        <div class="_img_container border border-solid rounded-full p-3">
+                            <img class="h-32 w-32 rounded-full object-cover" src="./assets/img/all/doctor_img.png" alt="">
+                        </div>
+                        <div class="_about_context flex flex-col text-left ml-6 xl:ml-4">
+                            <div  class="_splitTextClient _name">Dr. Eduardo Raulino</div>
+                            <p  class="_splitTextClient _lead flex flex-col">
+                                <span>Medico ha 15 anos e cirugiao plastico </span> <span>com mais de 10 anos de experiencia.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // >> About section end // -->
+
+
+    <!-- // >> My details start // -->
+    <div class="_my_details">
+        <div class="_container">
+            <div class="_my_details_context py-28">
+                <div class="_grid grid lg:grid-cols-2 gap-0 xl:gap-10">
+                    <div class="_doctor_img">
+                        <img src="./assets/img/about_doctor/doctor_half_img.png" alt="">
+                    </div>
+                    <div class="_splitTextClient _details flex flex-col justify-center items-start">
+                        <div id="myDetailsSplitText" class="_my_details_title flex flex-col">
+                            <span>Soumedico ha mais de 20 anos e cirurgiao plastico </span>
+                            <span>com mais de 15 anos de experiencia! </span>
+                        </div>
+                        <div id="myDetailsSplitText" class="_my_details_heading flex flex-col">
+                            <span>Mais de 2 mil</span>
+                            <span>Sonhos Realizados</span>
+                        </div>
+                        <div id="myDetailsSplitText" class="_lead mb-10">
+                            <div class="mb-6">
+                                conclui a pos-graduacao em cirurgia plastica estetica e reparadora na cidade de Sao Paulo em 2008, no hospital de referencia estadual ipiranga, onde tive a oportunidade de conviver e relizar cirurgias com os grandes nomes da cirurgia plastica brasileira e mundia.
+                            </div>                            
+                            <div>
+                                Equipamentos de vanguarda como o vaser, Renuvion, Microaire e Bodytite, somados a pericia do Dr. Eduardo Raulino com mais de 5.000 casos operados com sucesso conferem a clinica Raulino o status de referencia internacional em cirurgias de contorno corporal.
+                            </div>
+                        </div>
+                        <a data-cursor="-icon"  class="my_details_btn uppercase _ani_btn" href="#">Agendar Consulta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // >> my details End // -->
+
+
+    <!-- // >> video section start /  -->
+    <div class="_section_2" style="background: url(./assets/img/all/about_video_bg.png) no-repeat center center/cover;">
+        <div class="_section_content">
+            <div class="_container px-3">
+                <div class="_video_container py-36">
+                    <div class="_video_card w-full" style="background: url(./assets//img/about_doctor/about_doctor_video_img.png) no-repeat center center/cover;">
+                        <div class="_video">
+                            <button data-cursor="-icon" class="_video_1_pause_btn">
+                                <i class="_video_1_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                    </svg>                  
+                                </i>
+                            </button>
+                            <video class="_js_video_1" src="./assets/video/video.mp4"></video>
+                        </div>
+                        <div class="_overlay"></div>
+                        <div class="_context h-full w-full flex items-center justify-center flex-col js_video_1_context">
+                            <h1 class="_splitTextClient _section_card_heading block lg:flex lg:flex-col">
+                                <span>Alipoaspiração Ugraft define sua</span>
+                                <span>musculatura, cria sombras e relevos</span>
+                                <span>e elimina o excesso de gordura</span>
+                            </h1>
+                            <div class="_play_button_box">
+                               <button data-cursor="-icon" class="_play_button js_video_1_play_btn" src="./assets/video/video.mp4" role="button">
+                                    <img src="./assets/img/all/play_btn.png" alt="">
+                               </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // >> vide section end / -->
+
+
+
+    <!-- // >> _Expereance // -->
+    <div class="_Experience">
+        <div class="_container px-3">
+            <div class="_experience_content py-36">
+                <div class="_splitTextClient _experience_content_header mb-16">
+                    <div class="_title mb-6">Medico ha mais de 20 anos.</div>
+                    <h1 class="_experience_content_heading">Experiencia profissional</h1>
+                </div>
+                <div class="_collaps">
+                    <ul class="collapsible">
+                        <li data-cursor="-icon" class="accordion_content">
+                          <div class="collapsible-header flex items-center justify-between">
+                            <span id="experienceSectionSplitText2">Atividades cientificas</span>
+                            <div class="flex items-center justify-center">
+                                <i class="_plus_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                </i>
+                                <i class="_minas_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </i>
+                              </div>
+                          </div>
+                          <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eligendi vitae ipsa aut, fugiat nostrum quas quaerat error id dicta veritatis sequi quia at deserunt saepe ex minima rem laudantium nam quidem! Quas repudiandae a qui adipisci facere et veritatis neque doloribus. Ipsum sapiente aliquam impedit, laborum esse nisi vel neque praesentium incidunt, fuga libero totam. Praesentium ex minus incidunt enim, aperiam culpa, tenetur tempore sed laborum ducimus officia quas corrupti, neque sit iusto! Fuga vitae repellat rem aspernatur esse sequi, laborum adipisci, neque possimus, assumenda itaque odit aliquam officiis accusantium? Itaque tempora, aliquam voluptate a commodi animi officiis fugit.</span>                            
+                        </div>
+                        </li>
+                        <li data-cursor="-icon" class="accordion_content">
+                          <div class="collapsible-header flex items-center justify-between">
+                            <span id="experienceSectionSplitText2">Cursor</span>
+                            <div class="flex items-center justify-center">
+                                <i class="_plus_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                 </svg>
+                                </i>   
+                                <i class="_minas_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+
+                                </i>                               
+                            </div>
+                          </div>
+                          <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eligendi vitae ipsa aut, fugiat nostrum quas quaerat error id dicta veritatis sequi quia at deserunt saepe ex minima rem laudantium nam quidem! Quas repudiandae a qui adipisci facere et veritatis neque doloribus. Ipsum sapiente aliquam impedit, laborum esse nisi vel neque praesentium incidunt, fuga libero totam. Praesentium ex minus incidunt enim, aperiam culpa, tenetur tempore sed laborum ducimus officia quas corrupti, neque sit iusto! Fuga vitae repellat rem aspernatur esse sequi, laborum adipisci, neque possimus, assumenda itaque odit aliquam officiis accusantium? Itaque tempora, aliquam voluptate a commodi animi officiis fugit.</span>                            
+                        </div>
+                        </li>
+                        <li data-cursor="-icon" class="accordion_content">
+                          <div class="collapsible-header flex items-center justify-between">
+                            <span id="experienceSectionSplitText2">Colaboracao em atividades cientificas</span>
+                            <div class="flex items-center justify-center">
+                                <i class="_plus_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                </i>
+                                <i class="_minas_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+
+                                </i>
+                              </div>
+                          </div>
+                          <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eligendi vitae ipsa aut, fugiat nostrum quas quaerat error id dicta veritatis sequi quia at deserunt saepe ex minima rem laudantium nam quidem! Quas repudiandae a qui adipisci facere et veritatis neque doloribus. Ipsum sapiente aliquam impedit, laborum esse nisi vel neque praesentium incidunt, fuga libero totam. Praesentium ex minus incidunt enim, aperiam culpa, tenetur tempore sed laborum ducimus officia quas corrupti, neque sit iusto! Fuga vitae repellat rem aspernatur esse sequi, laborum adipisci, neque possimus, assumenda itaque odit aliquam officiis accusantium? Itaque tempora, aliquam voluptate a commodi animi officiis fugit.</span>                            
+                        </div>
+                        </li>
+                        <li data-cursor="-icon" class="accordion_content">
+                            <div class="collapsible-header flex items-center justify-between">
+                              <span id="experienceSectionSplitText2">Trabalho de pesquisa e publicacoes</span>
+                              <div class="flex items-center justify-center">
+                                  <i class="_plus_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </i>
+                                  <i class="_minas_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+
+                                  </i>
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eligendi vitae ipsa aut, fugiat nostrum quas quaerat error id dicta veritatis sequi quia at deserunt saepe ex minima rem laudantium nam quidem! Quas repudiandae a qui adipisci facere et veritatis neque doloribus. Ipsum sapiente aliquam impedit, laborum esse nisi vel neque praesentium incidunt, fuga libero totam. Praesentium ex minus incidunt enim, aperiam culpa, tenetur tempore sed laborum ducimus officia quas corrupti, neque sit iusto! Fuga vitae repellat rem aspernatur esse sequi, laborum adipisci, neque possimus, assumenda itaque odit aliquam officiis accusantium? Itaque tempora, aliquam voluptate a commodi animi officiis fugit.</span>                              
+                          </div>
+                          </li>
+                          <li data-cursor="-icon" class="accordion_content">
+                            <div class="collapsible-header flex items-center justify-between">
+                              <span id="experienceSectionSplitText2">Associacoes</span>
+                              <div class="flex items-center justify-center">
+                                  <i class="_plus_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </i>
+                                  <i class="_minas_icon flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+
+                                  </i>
+                                </div>
+                            </div>
+                            <div class="collapsible-body">
+                              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque eligendi vitae ipsa aut, fugiat nostrum quas quaerat error id dicta veritatis sequi quia at deserunt saepe ex minima rem laudantium nam quidem! Quas repudiandae a qui adipisci facere et veritatis neque doloribus. Ipsum sapiente aliquam impedit, laborum esse nisi vel neque praesentium incidunt, fuga libero totam. Praesentium ex minus incidunt enim, aperiam culpa, tenetur tempore sed laborum ducimus officia quas corrupti, neque sit iusto! Fuga vitae repellat rem aspernatur esse sequi, laborum adipisci, neque possimus, assumenda itaque odit aliquam officiis accusantium? Itaque tempora, aliquam voluptate a commodi animi officiis fugit.</span>                              
+                          </div>
+                          </li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // >> COllaps End // -->
+
+
+
+    <!-- // >> Marquee section start // -->
+    <div class="_marquee_section">
+        <div class="_marquee _marquee_top">
+            <div class="_marquee_content _marquee_content_top">
+                <span class="_marquee_context_top">Resultados naturais </span>
+                <span class="_marquee_context_top">Resultados naturais </span>
+            </div>
+        </div>
+        <div class="wrapper_img">
+            <div class="_container">
+                <div class="wrapper_img_card" style="background: url(./assets/img/all/marqueeInner.png) no-repeat center center;">
+                    <div class="wrapper_img_card_content">
+                        <h1 class="_splitTextClient _heading flex flex-col mb-6">
+                            <span>O corpo dos seus sonhos</span>
+                            <span>esta a um clique de voce</span>
+                        </h1>
+                        <p class="_splitTextClient _lead mb-6">A mais alta tecnologia da medicina para te atender a garantir sua seguranca.</p>
+                        <a data-cursor="-icon" class="_btn _ani_btn" href="#">Iniciar minha transformacao</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="_marquee _marquee_bottom">
+            <div class="_marquee_content _marquee_content_bottom">
+                <span class="_marquee_context_bottom">Resultados naturais </span>
+                <span class="_marquee_context_bottom">Resultados naturais </span>
+            </div>
+        </div>
+    </div>
+    <!-- // >> Marquee section end // -->
+
+
+    <!-- // >> Footer Start /  -->
+    <!-- // >> Footer Start /  -->
+    <footer class="_footer px-0 md:px-6">
+
+        <!-- // >> Tsttimonail section start ? -->
+        <div class="_testimonials pt-24 md:pt-28 pb-6  2xl:px-3">
+            <div class="max-w-screen-2xl m-auto md:px-3">
+                <div class="_content">
+                    <div class="_testimonials_header flex items-center justify-center mb-14">
+                        <img class="_footer_quotes" src="./assets//img/all/testimonials_header_logo.svg" alt="">
+                    </div>
+                    <div class="_testimoniasl_container">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="_slide_content">
+                                        <div class="_main_context">
+                                            <span>Tive um tratamento completamente indolor </span>
+                                            <span>me recuperei com apenas 7 dias apos a</span>
+                                            <span>cirurgia, me sinto sinto uma nova mulher.</span>
+                                        </div>
+                                        <div class="_name">Ana Clara Nascimento, <a data-cursor="-icon" href="#">Atriz</a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="_slide_content">
+                                        <div class="_main_context">
+                                            <span>Tive um tratamento completamente indolor </span>
+                                            <span>me recuperei com apenas 7 dias apos a</span>
+                                            <span>cirurgia, me sinto sinto uma nova mulher.</span>
+                                        </div>
+                                        <div class="_name">Ana Clara Nascimento, <a data-cursor="-icon" href="#">Atriz</a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="_slide_content">
+                                        <div class="_main_context">
+                                            <span>Tive um tratamento completamente indolor </span>
+                                            <span>me recuperei com apenas 7 dias apos a</span>
+                                            <span>cirurgia, me sinto sinto uma nova mulher.</span>
+                                        </div>
+                                        <div class="_name">Ana Clara Nascimento, <a data-cursor="-icon" href="#">Atriz</a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="_slide_content">
+                                        <div class="_main_context">
+                                            <span>Tive um tratamento completamente indolor </span>
+                                            <span>me recuperei com apenas 7 dias apos a</span>
+                                            <span>cirurgia, me sinto sinto uma nova mulher.</span>
+                                        </div>
+                                        <div class="_name">Ana Clara Nascimento, <a data-cursor="-icon" href="#">Atriz</a></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="_slide_content">
+                                        <div class="_main_context">
+                                            <span>Tive um tratamento completamente indolor </span>
+                                            <span>me recuperei com apenas 7 dias apos a</span>
+                                            <span>cirurgia, me sinto sinto uma nova mulher.</span>
+                                        </div>
+                                        <div class="_name">Ana Clara Nascimento, <a data-cursor="-icon" href="#">Atriz</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // >> Tsttimonail section End ? -->
+
+        <!-- // >> horizontal  -->
+        <div class="_custome_footer_container">
+            <hr class="_footer_section_horizontal">
+        </div>
+        <!-- // >> horizontal end -->
+
+        <!-- // >> Roulino start ? -->
+        <div class="_roulino">
+            <div class="max-w-screen-2xl m-auto px-3">
+                <div class="_roulino_context flex flex-col items-center justify-center">
+                    <div class="_logo mb-10">
+                        <img src="./assets/img/logo/raulino_logo.svg" alt="">
+                    </div>
+                    <div class="_text flex flex-col text-center">
+                        <span>A Clinica Raulino conta com alguns dos melhores cirugioes plasticos da brasil, que utilisam os</span>
+                        <span>equipaments da mains alta qualidade para garantir a sua seguranca.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="_custome_footer_container">
+                <hr class="_footer_section_horizontal">
+            </div>
+        </div>
+        <!-- // >> Roulino End ? -->
+
+        <!-- // >> footer Address start / -->
+        <div class="_footer_address">
+            <div class="max-w-screen-2xl m-auto px-0 md:px-3">
+            <div class="_custome_footer_container">
+                <div class="grid grid-cols-2 gap-5 md:gap-2">
+                    <div>
+                        <div class="_title">Atendimento</div>
+                        <ul>
+                            <li>(47) 99670-0099</li>
+                            <li>Seg - Sex, 08:00 - 17:00</li>
+                            <li>Fechado aos finais de semana</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="_title">Consultorio Praia Brava</div>
+                        <ul>
+                            <li>Av. Osvaldo Reis, 3385</li>
+                            <li>Edificio Riviera concept, Sala 1807</li>
+                            <li>Praia Brava - Itajai (SC)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- // >> footer address end / -->
+
+        <!-- // >> horizontal -->
+        <div class="_custome_footer_container">
+            <hr class="_footer_section_horizontal">
+        </div>
+        <!-- // >> horizontal End -->
+
+        <!-- // >> footer social start / -->
+        <div class="_footer_social">
+            <div class="max-w-screen-2xl m-auto px-3">
+                <div class="flex items-center justify-center">
+                    <a data-cursor="-icon" href="#" class="flex items-center justify-center h-16 w-16 p-1 mx-4">
+                       <img src="./assets/img/social/facebook_svg.svg" alt="">
+                    </a>
+                    <a data-cursor="-icon" href="#" class="flex items-center justify-center h-16 w-16 p-1 mx-4">
+                        <img src="./assets/img/social/instagramsvg.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- // >> footer social end / -->
+
+    </footer>
+    <!-- // >> Footer end  / -->
+
+</main>
+
+
+
+
+    <!-- // >> Gsap Plugins // -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CustomEase.min.js"></script>
+
+
+    <!-- // >> Loco scroll -->
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- // >> Split Text /  -->
+    <script src="./assets/js/pakeges/SplitText.min.js"></script>
+
+    <!-- // >> Mouse follower pakeges / -->
+    <script src="./assets/js/pakeges/mouseFollower.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+
+    <!-- // From All / -->
+    <script src="./assets/js/components/all/cursor.js"></script>
+    <script src="./assets/js/components/all/offcanva.js"></script>
+    <script src="./assets/js/components/all/testimonial.js"></script>
+    <script src="./assets/js/components/about/aboutVideoPlayer.js"></script>
+    <script src="./assets/js/components/about/aboutCollaps.js"></script>
+    
+    <!-- // From Home js / -->
+    <script src="./assets/js/components/about/aboutMarquee.js"></script>
+    <script src="./assets/js/components/about/about_preloader.js"></script>
+    <script src="./assets/js/components/about/aboutSmoothScrolling.js"></script>
+    <!-- <script src="./assets/js/components/all/contextMenu.js"></script> -->
+
+</body>
+</html>
+
+
+<!-- 
+    // >> ===============
+               Finish
+    // >> ===============
+-->

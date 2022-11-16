@@ -1,0 +1,320 @@
+// >> XL 1201
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+
+
+    ._my_details {
+
+
+        ._my_details_context {
+
+         
+            
+            ._details {
+                margin-left: 2rem;
+
+
+                ._my_details_title {
+                    font-size: 15px;
+                }
+
+                ._my_details_heading {
+                    font-size: 48px;
+                }
+
+                ._lead {
+                    font-size: 15px;
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+
+
+
+
+    ._my_details {
+
+
+        ._my_details_context {
+
+            ._grid {
+
+
+                ._doctor_img {
+                    margin-bottom: 3rem;
+
+                    img {
+                        margin: auto;
+                    }
+                }
+            }
+            
+            ._details {
+                margin-left: 2rem;
+                margin-right: 2rem;
+                margin: auto;
+                width: 80%;
+
+                ._my_details_title {
+                    font-size: 15px;
+                }
+
+                ._my_details_heading {
+                    font-size: 44px;
+                }
+
+                ._lead {
+                    font-size: 15px;
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+
+    ._about_video {
+
+        ._about_video_context {
+
+
+            ._video_thumb {
+                width: 100%;
+
+
+                ._video_context {
+
+
+                    ._video_context_heading {
+                        font-size: 46px;
+                    }
+
+                    ._play_button {
+                        height: 90px;
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+
+
+
+    ._my_details {
+
+
+        ._my_details_context {
+
+            ._grid {
+
+
+                ._doctor_img {
+                    margin-bottom: 5rem;
+
+                    img {
+                        margin: auto;
+                    }
+                }
+            }
+            
+            ._details {
+                margin-left: 1rem;
+
+
+                ._my_details_title {
+                    font-size: 16px;
+                }
+
+                ._my_details_heading {
+                    font-size: 36px;
+                }
+
+                ._lead {
+                    font-size: 16px;
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+
+
+    ._about_video {
+
+        ._about_video_context {
+
+
+            ._video_thumb {
+                width: 100%;
+
+
+                ._video_context {
+
+
+                    ._video_context_heading {
+                        font-size: 36px;
+                    }
+
+                    ._play_button {
+                        height: 90px;
+                        width: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+
+    ._my_details_heading {
+        font-size: 28px !important;
+        margin-bottom: 1rem;
+    }
+
+
+    ._about_video {
+
+        ._about_video_context {
+            padding: 5rem 0;
+
+            ._video_thumb {
+                width: 100%;
+
+
+                ._video_context {
+                    padding: 6rem 0;
+
+
+                    ._video_context_heading {
+                        font-size: 28px !important; 
+                    }
+
+                    ._play_button {
+                        height: 60px !important;
+                        width: 60px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    ._experience_content_heading {
+        font-size: 28px !important; 
+    }
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+
+
+    ._my_details {
+
+
+        ._my_details_context {
+
+            ._grid {
+
+
+                ._doctor_img {
+                    margin-bottom: 2rem;
+
+                    img {
+                        margin: auto;
+                        width: 80%;
+                    }
+                }
+            }
+         
+            
+            ._details {
+                margin-left: 0rem;
+
+
+                ._my_details_title {
+                    font-size: 14px;
+                    margin-bottom: 1rem;
+                    font-weight: 100;
+                }
+
+                ._my_details_heading {
+                    font-size: 30px;
+                    margin-bottom: 1rem;
+                }
+
+                ._lead {
+                    font-size: 14px;
+                    padding-right: 1rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+   
+
+    ._about_video {
+
+        ._about_video_context {
+
+
+            ._video_thumb {
+                width: 100%;
+
+
+                ._video_context {
+
+
+                    ._video_context_heading {
+                        font-size: 36px;
+                        display: block;
+                        padding: 0 1.75rem;
+                    }
+
+                    ._play_button {
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    ._Experience {
+
+        ._experience_content  {
+            padding: 5rem 0;
+
+            ._experience_content_heading {
+                font-size: 36px;
+            }
+
+            .collapsible {
+
+
+                .collapsible-header {
+                    padding: 1rem 0 !important;
+                    font-size: 14px !important;
+                }
+            }
+
+        }
+    }
+}

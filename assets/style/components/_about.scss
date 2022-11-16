@@ -1,0 +1,165 @@
+._hero {
+
+
+    ._hero_content {
+
+        ._about_heading {
+            font-size: 70px;
+
+            // if(max-w-screen-2xl) {
+                // font-size: 86px;
+            // }
+
+            font-family: "prata";
+            line-height: 1.2;
+        }
+
+
+    }
+}
+
+
+
+// >> My details
+._my_details {
+
+    ._my_details_context {
+
+        ._doctor_img {
+
+            img {
+                box-shadow: 2px 5px 20px #69615a67;
+            }
+        }
+
+        ._details {
+            margin-left: 5rem;
+
+            ._my_details_title {
+                font-family: "poppins";
+                margin-bottom: 2rem;
+                font-size: 18px;
+                color: #6C6056;
+            }
+
+            ._my_details_heading {
+                font-size: 65px;
+                font-family: "prata";
+                margin-bottom: 2rem;
+                color: #2E2A28;
+            }
+
+            ._lead {
+                font-family: "poppins";
+                line-height: 2;
+                font-size: 18px;
+                color: #686059;
+            }
+
+            .my_details_btn {
+                display: inline-block;
+                padding: 0.75rem 2rem;
+                border: 1px solid #2E2A28;
+                border-radius: 30px;
+                color: #6C6056;
+                font-size: 18px;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 16px;
+                    padding: 0.75rem 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+._Experience {
+
+    ._experience_content_header {
+
+        ._title {
+            font-family: "poppins";
+            font-size: 22px;
+            color: #6C6056;
+        }
+
+        ._experience_content_heading {
+            font-size: 65px;
+            font-family: "prata";
+            color: #2E2A28;
+        }
+    }
+
+    ._collaps {
+
+        .collapsible {
+
+            .accordion_content {
+                border-top: 1px solid #BF9B7A;
+
+                &:last-child {
+                    border-bottom: 1px solid #BF9B7A;
+                }
+
+                .collapsible-header {
+                    padding: 35px 0;
+                    font-family: "poppins";
+                    font-size: 22px;
+                    cursor: pointer;
+                    color: #6C6056;
+
+                    i {
+                        color: #6E6258;
+                       
+                        svg {
+                            height: 40px;
+                            width: 40px;
+
+                            @media only screen and (max-width: 768px) {
+                                height: 30px;
+                                width: 30px;
+                            }
+                        }
+
+                        &._minas_icon {
+                            display: none;
+                        }
+                    }
+                }
+                
+                .collapsible-body {
+                    height: 0;
+                    transition: 0.3s;
+                    overflow: hidden;
+                    opacity: 0;
+                    font-size: 20px;
+
+                    &.open_ {
+                        margin-bottom: 3rem;
+                        opacity: 1;
+                    }
+                }
+
+                &.open {
+
+                    .collapsible-header {
+
+                        ._minas_icon {
+                            display: flex;
+                        }
+
+                        ._plus_icon {
+                            display: none;
+                        }
+                    }
+
+                }
+                
+            }
+        }
+    }
+}

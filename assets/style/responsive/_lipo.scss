@@ -1,0 +1,405 @@
+// >> XL 1201
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    ._section_carousel {
+
+        ._lipo_carousel_header {
+
+
+            ._title {
+
+            }
+
+            ._heading{
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1366px) and (max-height: 768px) {
+    ._ultra_hd_ugraft {
+        
+        ._ultra_hd_ugraft_content {
+            padding: 5rem 0;
+
+            ._ultra_hd_ugraft_section_header {
+                margin-bottom: 2rem;
+
+                ._ultra_hd_heading {
+                    font-size: 50px;
+                }
+            }
+
+            ._section_details {
+
+
+
+                ._ultra_hd_about {
+                    margin-left: 1rem;
+
+                    ._title {
+                        font-size: 19px;
+                        margin-bottom: 1rem !important;
+                    }
+
+                    ._heading {
+                        font-size: 50px;
+                        margin-bottom: 1rem;
+                    }
+
+                    ._lead {
+                        font-size: 19px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+    ._ultra_hd_ugraft {
+
+        ._ultra_hd_ugraft_content {
+
+            ._ultra_hd_ugraft_section_header {
+                margin-bottom: 2rem;
+
+                ._ultra_hd_heading {
+                    font-size: 48px;
+                }
+            }
+
+            ._section_details {
+
+
+
+                ._ultra_hd_about {
+                    margin-left: 1rem;
+
+                    ._title {
+                        font-size: 18px;
+                        margin-bottom: 1rem !important;
+                    }
+
+                    ._heading {
+                        font-size: 44px;
+                        margin-bottom: 1rem;
+                    }
+
+                    ._lead {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    ._section_carousel {
+
+        ._lipo_carousel_header {
+
+
+            ._title {
+
+            }
+
+            ._heading{
+                font-size: 48px;
+            }
+        }
+
+
+
+        ._section_carousel_container {
+            max-width: 940px;
+            padding-left: 0.9rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    ._ultra_hd_ugraft_section_header {
+        margin-bottom: 2rem !important;
+    }
+
+    ._ultra_hd_img_container  {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+// >> XL 1201
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+
+    ._ultra_hd_ugraft {
+        
+        ._ultra_hd_ugraft_content {
+            padding: 5rem 0;
+
+            ._ultra_hd_ugraft_section_header {
+
+
+                ._ultra_hd_title {
+                    font-size: 17px;
+                }
+
+                ._ultra_hd_heading {
+                    font-size: 50px;
+                }
+            }
+
+            ._section_details {
+                grid-template-columns: 1fr !important;
+                margin: auto;
+
+                ._ultra_hd_img_container {
+                    margin-bottom: 1.5rem;
+                    width: 80%;
+                    margin: auto;
+
+                    img  {
+                        margin: auto;
+                        width: 100%;
+                    }
+                }
+
+                ._ultra_hd_about {
+                    margin-left: 0;
+                    
+                    ._title {
+                        font-size: 17px;
+                        line-height: 1.6;
+                    }
+
+                    ._heading {
+                        font-size: 50px;
+                    }
+
+                    ._lead {
+                        font-size: 17px;
+
+                        p {
+                            margin-bottom: 0;
+                            line-height: 1.6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ._section_carousel {
+
+        ._lipo_carousel_header {
+
+            ._title {
+            }
+
+            ._heading{
+                font-size: 42px;
+            }
+        }
+
+        ._section_carousel_container {
+            max-width: 720px;
+            padding-left: 1rem;
+
+            .carousel_caption {
+
+                .carousel_caption_content {
+                    padding: 1.5rem 2rem;
+
+                    .craousel_heading {
+                        font-size: 32px;
+                    }
+
+                    .carousel_lead {
+                        font-size: 15px;
+                    }
+
+                    .carousel_btn {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    ._ultra_hd_ugraft_section_header {
+
+        ._ultra_hd_title {
+            font-size: 16px;
+        }
+
+        ._ultra_hd_heading {
+            font-size: 28px !important;
+            display: block;
+        }
+    }
+
+    ._ultra_hd_about {
+        margin-left: 0;
+        
+        ._title {
+            font-size: 14px !important;
+        }
+
+        ._heading {
+            font-size: 28px !important;
+        }
+
+        ._lead {
+            font-size: 14px !important;
+            margin-bottom: 1.5rem !important;
+
+            p {
+                margin-bottom: 0.75rem !important;
+            }
+        }
+
+        ._ultra_hb_btn {
+            font-size: 16px;
+            padding: 0.75rem 2rem;
+        }
+    }
+}
+
+// >> XL 1201
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    ._ultra_hd_ugraft {
+        
+        ._ultra_hd_ugraft_content {
+            padding: 5rem 0;
+
+            ._ultra_hd_ugraft_section_header {
+
+                ._ultra_hd_title {
+                    font-size: 17px;
+                }
+
+                ._ultra_hd_heading {
+                    font-size: 32px;
+                    display: block;
+                }
+            }
+
+            ._section_details {
+                grid-template-columns: 1fr !important;
+                width: 100%;
+                margin: auto;
+
+                ._ultra_hd_img_container {
+                    margin-top: 0;
+                    margin-bottom: 1.5rem;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    img  {
+                        margin: auto;
+                        width: 100%;
+                    }
+                }
+
+                ._ultra_hd_about {
+                    margin-left: 0;
+                    
+                    ._title {
+                        font-size: 16px;
+                    }
+
+                    ._heading {
+                        font-size: 32px;
+                    }
+
+                    ._lead {
+                        font-size: 16px;
+                        margin-bottom: 0;
+                    }
+
+                    ._ultra_hb_btn {
+                        font-size: 16px;
+                        padding: 0.75rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    ._section_carousel {
+        padding-top: 5rem;
+        
+        ._lipo_carousel_header {
+
+
+            ._title {
+                font-size: 15px;
+            }
+
+            ._heading{
+                font-size: 28px;
+                display: block;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .carousel_indicator {
+            margin-right: 0;
+        }
+
+        ._section_carousel_container {
+            max-width: 90%;
+
+            .carousel_item {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .carousel_caption {
+                padding: 0;
+                position: static;
+
+                .carousel_caption_content {
+                    padding: 0.75rem 0;
+                    position: static;
+                    box-shadow: none;
+                    background-color: transparent;
+
+                    .craousel_heading {
+                        font-size: 24px;
+                    }
+
+                    .carousel_lead {
+                        font-size: 15px;
+                    }
+
+                    .carousel_btn {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .carousel_control {
+            bottom: 0;
+        }
+    }
+}

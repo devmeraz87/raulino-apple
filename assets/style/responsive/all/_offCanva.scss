@@ -1,0 +1,319 @@
+@media only screen and (min-width: 1201px) and (max-width: 1366px) {
+    ._offCanva {
+
+        ._offCanvaContent {
+
+
+            ._offCanva_left_and_right_container {
+
+                ._gsap_offCanvaRight {
+                    // display: none;
+                }
+            }
+
+
+            ._gsap_offCanva_links {
+
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1366px) and (max-height: 768px) {
+    
+
+    ._offCanva {
+
+        ._offCanva_left_and_right_container {
+
+            ._offCanva_right_element {
+                flex: 1.5 !important;
+            }
+        }
+
+        ._links {
+
+            ._links_item {
+
+                a {
+                    font-size: 40px !important; 
+                }
+            }
+        }
+
+        ._offCanvaContact {
+
+                        
+            ._contact_item {
+
+                &:not(:first-child) {
+                    margin-left: 4rem;
+                }
+
+                ._contact_title {
+                    font-size: 15px !important;
+                }
+
+                ._contact_details {
+                    ._contact_details_item {
+                    font-size: 15px !important;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
+    ._offCanva {
+
+        ._offCanva_left_and_right_container {
+
+            ._offCanva_right_element {
+                flex: 1 !important;
+                background-position: 50% center !important;
+            }
+        }
+
+        ._offCanva_links {
+
+            ._offCanva_links_content {
+
+                ._links {
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    ._offCanva {
+
+        ._offCanvaContent {
+
+
+            ._offCanva_left_and_right_container {
+
+                ._offCanva_right_element {
+                    flex: 1.5 !important;
+                    background-position: 80% center !important;
+                }
+            }
+
+
+            ._offCanva_links {
+
+
+                ._offCanva_links_content {
+
+
+                    ._links {
+
+                        ._links_item {
+
+                            a {
+                                font-size: 48px; 
+                            }
+                        }
+                    }
+
+
+                    ._offCanvaContact {
+
+                        
+                        ._contact_item {
+                            &:not(:first-child) {
+                                margin-left: 4rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    ._offCanva {
+
+        ._offCanvaContent {
+
+
+            ._offCanva_left_and_right_container {
+
+                ._offCanva_right_element {
+                    display: none;
+                }
+            }
+
+
+            ._offCanva_links {
+
+
+                ._offCanva_links_content {
+
+
+                    ._links {
+
+                        ._links_item {
+
+                            a {
+                                font-size: 44px !important; 
+                            }
+                        }
+                    }
+
+
+                    ._offCanvaContact {
+
+                        
+                        ._contact_item {
+                            &:not(:first-child) {
+                                margin-left: 4rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    ._offCanva {
+
+        ._offCanvaContent {
+
+
+            ._offCanva_left_and_right_container {
+
+                ._offCanva_right_element {
+                    display: none;
+                }
+            }
+
+
+            ._offCanva_links {
+
+
+                ._offCanva_links_content {
+
+
+                    ._links {
+
+                        ._links_item {
+
+                            a {
+                                font-size: 36px; 
+                            }
+                        }
+                    }
+
+
+                    ._offCanvaContact {
+
+                        
+                        ._contact_item {
+                            &:not(:first-child) {
+                                margin-left: 4rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 412px) {
+    
+    ._links {
+
+        ._links_item {
+
+            a {
+                font-size: 34px !important; 
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 410px) {
+    ._offCanva {
+
+        ._offCanvaContent {
+
+
+            ._offCanva_left_and_right_container {
+
+                ._offCanva_right_element {
+                    display: none;
+                }
+            }
+
+
+            ._offCanva_links {
+
+
+                ._offCanva_links_content {
+
+
+                    ._links {
+
+                        ._links_item {
+
+                            a {
+                                font-size: 28px !important; 
+                            }
+                        }
+                    }
+
+
+                    ._offCanvaContact {
+
+                        
+                        ._contact_item {
+                            ._contact_title {
+                                font-size: 13px;
+                            }
+
+                            ._contact_details {
+                                ._contact_details_item {
+                                font-size: 12px !important;
+
+                                }
+                            }
+                            &:not(:first-child) {
+                                margin-left: 2rem;
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

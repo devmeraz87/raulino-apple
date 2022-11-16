@@ -1,0 +1,114 @@
+._offCanva {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    pointer-events: none;
+    z-index: 9999;
+
+
+    &._active {
+        pointer-events: all;
+    }
+
+
+
+    ._offCanvaContent {
+        height: 100%;
+        width: 100%;
+
+        ._offCanva_left_and_right_container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            display: flex;
+            
+
+            ._offCanva_left_element {
+                flex: 1.5;
+                height: 0%;
+                background-color: #2D2824;
+            }
+
+            ._offCanva_right_element {
+                flex: 1;
+                height: 0%;
+            }
+        }
+
+
+        ._offCanva_links {
+            position: fixed;
+            transform: translateY(-100vh);
+            opacity: 0;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+
+            ._container {
+                height: 100%;
+            }
+
+            ._offCanva_links_content {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                ._links {
+                    margin-bottom: 5rem;
+
+                    ._links_item {
+                        margin-bottom: 0.75rem;
+
+                        a {
+                            font-family: "prata";
+                            font-size: 55px;
+                            color: #D9C4B0;
+
+                            &._active {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                ._offCanvaContact {
+                    display: flex;
+
+                    ._contact_item {
+
+                        &:not(:first-child) {
+                            margin-left: 10rem;
+                        }
+
+                        ._contact_title {
+                            margin-bottom: 1.5rem;
+                            font-size: 17px;
+                            color: #D9C4B0;
+                            display: block;
+                        }
+
+                        ._contact_details {
+                            
+                            ._contact_details_item {
+                                font-size: 15px;
+                                font-weight: 100;
+                                color: #F1EAE3;
+                                margin-bottom: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}

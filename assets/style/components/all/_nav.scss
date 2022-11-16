@@ -1,0 +1,200 @@
+
+// >> mainNav start
+.mainNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    z-index: 9999;
+
+    height: 120px;
+    width: 100%;
+    pointer-events: none;
+
+    @media only screen and (max-width: 768px) {
+        height: 100px;
+    }
+
+
+    .mainNavContent {
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 768px) {
+            height: 100px;
+        }
+
+        ._burger {
+            z-index: 99999;
+            pointer-events: all;
+
+            ._burger_btn {
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                ._burger_icon {
+                    position: relative;
+                    height: 2px;
+                    width: 40px;
+                    border-radius: 1px;
+                    background-color: #ccc;
+                    transition: 0.4s;
+
+                    &::before, &::after {
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        width: 25px;
+                        border-radius: 1px;
+                        background-color: #ccc;
+                        transition: 0.4s;
+                    }
+
+                    &::before {
+                        top: 10px;
+                        left: 0;
+                    }
+
+                    &::after {
+                        top: -10px;
+                        right: 0;
+                    }
+                }
+
+                &:hover {
+                    ._burger_icon {
+                        &::before, &::after {
+                            width: 40px;
+                        }
+                    }
+                }
+
+                &._active {
+
+                    ._burger_icon {
+                        transform: translateX(50px);
+                        pointer-events: none;
+                        background-color: transparent;
+                        
+                        &::before, &::after {
+                            width: 40px;
+                            top: 0;
+                        }
+
+                        &::before {
+                            left: 0;
+                            transform: translateX(-50px) rotate(45deg);
+
+                        }
+
+                        &::after {
+                            right: 0;
+                            transform: translateX(-50px) rotate(-45deg);
+
+                        }
+                    }    
+                }
+            }
+        }
+
+        ._logo {
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+
+                img {
+                    width: 220px;
+                    height: auto;
+                
+                    @media only screen and(max-width: 768px) {
+                        width: 160px !important;
+                    }
+
+                    pointer-events: all;
+                }
+
+            }
+
+        ._lang_flags {
+            pointer-events: all;
+
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+
+            ._lang_flags_items {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                ._flag {
+                    opacity: 0.5;
+                    transition: opacity 0.3s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    img {
+                        height: 20px;
+                        width: 35px;
+                        object-fit: cover;
+                        pointer-events: none;
+                    }
+
+                    cursor: pointer;
+                    &:not(:last-child) {
+                        margin-right: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+._ani_btn  {
+    position: relative;
+    overflow: hidden !important;
+    display: inline-block;
+    z-index: 999999;
+
+
+    &::before {
+        pointer-events: none;
+        content: "";
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        height: 0%;
+        width: 100%;
+        background-color: #D9C4B0 !important;
+        transition: 0.5s;
+        z-index: -1;
+    }
+
+    &:hover {
+        background-color: transparent !important;
+        border-color:  #D9C4B0 !important;
+        color: #2E2A28 !important;
+
+
+
+        &::before {
+            transition: 0.5s;
+            height: 100%;
+            bottom: 0;
+        }
+    }
+}

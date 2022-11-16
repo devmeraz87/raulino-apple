@@ -1,0 +1,73 @@
+._hero {
+    position: relative;
+    height: 100vh;
+    background-color: rgba(26, 26, 26, 0.172);
+    z-index: -1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.103);
+    }
+    
+
+    ._hero_content {
+        text-align: center;
+
+        ._section_title {
+            font-size: 20px;
+            margin-top: 5rem;
+            color: #F1EAE3;
+            font-family: "poppins";
+
+            span {
+                color: #D9C4B0;
+            }
+        }
+
+        ._section_heading {
+            font-size: 70px;
+            margin-bottom: 2rem;
+            font-family: "prata";
+            color: #F1EAE3;
+        }
+
+        ._section_lead {
+            font-size: 20px;
+            margin-bottom: 3rem;
+            font-family: "poppins";
+            color: #D9C4B0;
+        }
+
+        ._button_container {
+           margin-bottom: 6rem;
+
+            ._button {
+                border: 1px solid #fff;
+                padding: 0.75rem 2rem;
+                text-transform: uppercase;
+                border-radius: 50px;
+                font-family: "poppins";
+                font-weight: 500;
+                font-size: 18px;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: #D9C4B0;
+                    border-color: #D9C4B0;
+                    color: #2E2A28;
+                }
+            }
+        }
+
+        ._circle_logo_selo {
+
+            img {
+                // if Need
+            }
+        }
+    }
+}

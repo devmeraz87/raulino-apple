@@ -1,0 +1,159 @@
+._section_2 {
+
+    ._section_content {
+
+        ._video_container {
+
+            @media only screen and (max-width: 500px) {
+                padding: 5rem 0;
+            }
+
+            ._video_card {
+                position: relative;
+                padding: 8rem 6rem;
+                background-color: #ccc;
+                background-position: top center !important;
+
+                @media only screen and (max-width: 1366px) {
+                    padding: 6rem 3rem;
+                }
+                @media only screen and (max-width: 1024px) {
+                    padding: 4rem 3rem;
+                }
+                @media only screen and (max-width: 991px) {
+                    padding: 4rem 3rem;
+                }
+                @media only screen and (max-width: 768px) {
+                    padding: 4rem 3rem;
+                }
+                @media only screen and (max-width: 600px) {
+                    padding: 4rem 3rem;
+                }
+
+                @media only screen and (max-width: 400px) {
+                    padding: 4rem 2rem;
+                }
+
+               
+
+
+                ._video {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+
+                    ._js_video_1 {
+                        opacity: 0;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    ._video_1_pause_btn {
+                        position: absolute;
+                        right: 20px;
+                        top: 20px;
+                        cursor: pointer;
+                        height: 30px;
+                        width: 30px;
+                        z-index: 99;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        overflow: hidden;
+
+                        i {
+                        transform: translateY(-100px);
+
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 40px;
+                            width: 40px;
+
+                            svg {
+                                height: 40px;
+                                width: 40px;
+                                stroke: aliceblue;
+                            }
+                        }
+                    }
+                }
+
+                ._overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(34, 34, 34, 0.144);
+                }
+
+                ._context {
+                    text-align: center;
+                    position: relative;
+
+                    ._section_card_heading {
+                        font-size: 65px;
+                        font-family: "prata";
+                        color: #F1EAE3;
+                        line-height: 1.5;
+                        pointer-events: none;
+
+                        @media only screen and (max-width: 1366px) {
+                            font-size: 50px;
+                        }
+
+                        @media only screen and (max-width: 1300px) {
+                            font-size: 55px;
+                        }
+                        @media only screen and (max-width: 1024px) {
+                            font-size: 50px;
+                        }
+                        @media only screen and (max-width: 991px) {
+                            font-size: 50px;
+                        }
+                        @media only screen and (max-width: 768px) {
+                            font-size: 40px;
+                        }
+                        @media only screen and (max-width: 600px) {
+                            font-size: 32px;
+                        }
+                        @media only screen and (max-width: 400px) {
+                            font-size: 28px;
+                        }
+                    }
+
+                    ._play_button_box {
+                        margin-top: 6rem;
+                      
+
+                        ._play_button {
+                            cursor: pointer;
+                            user-select: none;
+
+                            img {
+                                height: 132px;
+
+                                @media only screen and (max-width: 991px) {
+                                    height: 120px;
+                                }
+
+                                @media only screen and(max-width: 768px) {
+                                    height: 115px;
+                                }
+
+                                @media only screen and (max-width: 500px) {
+                                    height: 110px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

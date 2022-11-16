@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'prata';
+    src: url(../font/prata/Prata-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url(../font/poppins/Poppins-Regular.otf);
+    font-style: normal
+}
+
+
+::selection {
+    background-color: rgba(59, 130, 246, 0.5);
+    backdrop-filter: blur(10px);
+  }
+
+body {
+    cursor: default;
+    background-color: #F1EAE3;
+}
+
+
+@import "./components/base";
+@import "./components/mouseFollower";
+@import "./components/all/nav";
+@import "./components/all/offCanva";
+@import "./components/all/loading";
+@import "./components/all/hero";
+@import "./components/all/about";
+@import "./components/all/marquee_effect";
+@import "./components/all/section_2";
+@import "./components/all/horizontalScrollNew";
+@import "./components/home";
+@import "./components/about";
+@import "./components/lipo";
+@import "./components/all/footer";
+@import "./components/all/video_player";
+@import "./components/all/photoSection";
+
