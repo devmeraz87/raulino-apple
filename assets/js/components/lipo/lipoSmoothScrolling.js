@@ -46,22 +46,36 @@ window.addEventListener("load", () => {
 
 
 
-      // >> hide and show stiky nav logo
-      gsap.to("._js_navLogo", {
-        scrollTrigger: {
-          scroller: "[data-scroll-container]",
-            trigger: "._ultra_hd_ugraft",
-            end: "+=100px",
-          },
-    
-          y: -100,
-          opacity: 0,
-          duration: 1,
-      })
+    // >> hide and show stiky nav logo
+    gsap.to("._js_navLogo", {
+      scrollTrigger: {
+        scroller: "[data-scroll-container]",
+          trigger: "._ultra_hd_ugraft",
+          scrub: true,
+          end: "+=100px",
+        },
+  
+        y: -100,
+        opacity: 0,
+        duration: 1,
+    })
 
  
+  
+    gsap.to("._lang_flags", {
+      scrollTrigger: {
+        scroller: "[data-scroll-container]",
+          trigger: "._ultra_hd_ugraft",
+          scrub: true,
+          end: "+=100px",
+      },
     
-
+      y: -100,
+      opacity: 0,
+      duration: 1,
+    })
+    
+      
 
 
 
@@ -86,7 +100,6 @@ function setupSplits() {
       scrollTrigger: {
         scroller: "[data-scroll-container]",
         trigger: target,
-        markers: true,
         start: "top 80%",
         end: "bottom top",
         // scrub: true
@@ -114,7 +127,6 @@ gsap.from(ultraHd_1_splitText.lines, {
   scrollTrigger: {
     scroller: "[data-scroll-container]",
     trigger: "#ultra_hd_title_1",
-    markers: true,
     start: "top 80%",
     end: "bottom top",
     // scrub: true
@@ -135,7 +147,6 @@ gsap.from(ultraHd_2_splitText.chars, {
   scrollTrigger: {
     scroller: "[data-scroll-container]",
     trigger: "#ultra_hd_hading",
-    markers: true,
     start: "top 80%",
     end: "bottom top",
     // scrub: true
@@ -156,7 +167,6 @@ gsap.from(ultraHd_3_splitText.lines, {
   scrollTrigger: {
     scroller: "[data-scroll-container]",
     trigger: "#ultra_hd_title_2",
-    markers: true,
     start: "top 90%",
     end: "bottom top",
     // scrub: true

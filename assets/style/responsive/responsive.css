@@ -418,11 +418,12 @@
     font-size: 42px;
   }
   ._section_carousel ._section_carousel_container {
-    max-width: 720px;
+    max-width: 850px;
     padding-left: 1rem;
   }
   ._section_carousel ._section_carousel_container .carousel_caption .carousel_caption_content {
     padding: 1.5rem 2rem;
+    max-width: 390px;
   }
   ._section_carousel ._section_carousel_container .carousel_caption .carousel_caption_content .craousel_heading {
     font-size: 32px;
@@ -432,6 +433,14 @@
   }
   ._section_carousel ._section_carousel_container .carousel_caption .carousel_caption_content .carousel_btn {
     font-size: 12px;
+  }
+  ._section_carousel ._section_carousel_container .carousel_control {
+    bottom: 50px;
+    right: 15px;
+  }
+  ._section_carousel ._section_carousel_container .carousel_control .carousel_button svg {
+    height: 65px;
+    width: 65px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -547,7 +556,11 @@
     font-size: 12px;
   }
   ._section_carousel .carousel_control {
-    bottom: 0;
+    bottom: 5px;
+  }
+  ._section_carousel .carousel_control .carousel_button svg {
+    height: 60px;
+    width: 60px;
   }
 }
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {

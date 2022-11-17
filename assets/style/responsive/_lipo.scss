@@ -215,13 +215,15 @@
         }
 
         ._section_carousel_container {
-            max-width: 720px;
+            max-width: 850px;
             padding-left: 1rem;
 
             .carousel_caption {
 
                 .carousel_caption_content {
                     padding: 1.5rem 2rem;
+                    max-width: 390px;
+
 
                     .craousel_heading {
                         font-size: 32px;
@@ -236,6 +238,22 @@
                     }
                 }
             }
+
+
+            .carousel_control {
+                bottom: 50px;
+                right: 15px;
+
+             
+                .carousel_button {
+
+             
+                   svg {
+                      height: 65px;
+                      width: 65px;
+                   }
+                }
+             }
         }
     }
 }
@@ -399,7 +417,16 @@
         }
 
         .carousel_control {
-            bottom: 0;
-        }
+            bottom: 5px;
+
+         
+            .carousel_button {
+         
+               svg {
+                  height: 60px;
+                  width: 60px;
+               }
+            }
+         }
     }
 }

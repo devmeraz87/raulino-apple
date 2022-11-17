@@ -69,6 +69,17 @@
 }
 
 
+
+._video {
+    opacity: 0;
+    
+}
+
+._eventNone  {
+    pointer-events: none;
+}
+
+
 ._close_btn {
     position: fixed;
     top: 20px;
@@ -114,4 +125,6 @@
         }
     }
 }
+
+
 

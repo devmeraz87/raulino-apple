@@ -31,7 +31,7 @@
         }
 
         ._loading_bar {
-            width: 120px; 
+            width: 300px; 
             height: 1px; 
             background-color: black;
 
@@ -39,7 +39,7 @@
                 height:1px;
                 background:#fff;
                 width:0;              
-                transition: 0.5s;
+                transition: 1s;
               }
         }
     }

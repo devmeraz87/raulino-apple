@@ -34,6 +34,11 @@ btnBurger.addEventListener("click", () => {
             opacity: 1
         })
 
+        gsap.to("._js_navLogo", {
+            opacity: 0,
+            duration: 1
+        })
+
         gsap.to("#_gsap_offCanvaLeft", {
             // y: "0",
             height: "100%",
@@ -111,6 +116,12 @@ btnBurger.addEventListener("click", () => {
             opacity: 1,
             duration: 1
         })
+
+        gsap.to("._js_navLogo", {
+            opacity: 1,
+            duration: 1
+        })
+
 
         menuOpen = false;
     }

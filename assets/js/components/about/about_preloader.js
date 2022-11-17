@@ -14,7 +14,7 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
       function imgLoaded(){
         c += 1;
         var perc = ((100/tot*c) << 0) +"%";
-        starter.innerHTML = "Eduardo";
+        starter.innerHTML = "DR EDUARDO F. RAULINO";
         prog.style.width = perc;
         if(c===tot) return doneLoading();
       }
@@ -22,7 +22,6 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
         setTimeout(function(){ 
             // >> remove loader
             gsap.to("#_first_loading", {duration: 1.5, delay: 1, ease: secondEase, height: "0%"});
-            gsap.to("#_second_loading", {duration: 1.5,   delay: 3, ease: secondEase, height: "0%"});
 
             // >> Animate hero text
             // >> hero heading //
@@ -31,7 +30,7 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
             aoboutHeroHeadingSplitTextCharecter = aboutHeroHeadingSplitText.chars; //an array of all the divs that wrap each character
             
             aboutTimeLine.from(aoboutHeroHeadingSplitTextCharecter, {
-              delay: 5,
+              delay: 3,
               duration: 0.5,
               opacity: 0,
               scale: 1,

@@ -35,6 +35,19 @@ const scroller = new LocomotiveScroll({
 
 
 
+// >> About
+    gsap.from("._about_doctor", {
+      y: 100,
+      duration: 1,
+      opacity: 0,
+      scrollTrigger : {
+        scroller: "[data-scroll-container",
+        trigger: "._about_doctor",
+        start: "top 80%",
+        // scrub: true, 
+        // markers: true
+    },
+    })
 
     // >> hide and show stiky nav logo
     gsap.to("._js_navLogo", {
@@ -49,6 +62,22 @@ const scroller = new LocomotiveScroll({
       opacity: 0,
       duration: 1,
     })
+
+      
+    gsap.to("._lang_flags", {
+      scrollTrigger: {
+        scroller: "[data-scroll-container]",
+          trigger: "._about",
+          scrub: true,
+          end: "+=100px",
+      },
+    
+      y: -100,
+      opacity: 0,
+      duration: 1,
+    })
+    
+      
 
     // >> Animate wrapper image
     gsap.to(".wrapper_img_card", {
@@ -95,6 +124,85 @@ setupSplits();
 
 
 
+const myDetailsTitle = document.querySelector("#myDetailsSplitText_1");
+
+gsap.from(myDetailsTitle, {
+  delay: 0.5,
+  y: 30,
+  stagger: 0.02,
+  opacity: 0,
+  ease: "back.out",
+  duration: 1,
+  scrollTrigger: {
+    scroller: "[data-scroll-container]",
+    trigger: "#myDetailsSplitText_1",
+    start: "top 80%",
+    end: "bottom top",
+    // scrub: true
+  }
+});
+
+const myDetailsheading = document.querySelector("#myDetailsSplitText_2");
+const myDetailsHeadingSPlitText = new SplitText(myDetailsheading, {type: "words, chars"});
+
+gsap.from(myDetailsHeadingSPlitText.chars, {
+  delay: 0.5,
+  y: 50,
+  stagger: 0.01,
+  ease: "back.out",
+  opacity: 0,
+  duration: 0.8,
+  scrollTrigger: {
+    scroller: "[data-scroll-container]",
+    trigger: myDetailsheading,
+    markers: true,
+    start: "top 80%",
+    end: "bottom top",
+    // scrub: true
+  }
+});
+
+
+
+// >> my details SPlittext
+const myDetailsTitle_3 = document.querySelector("#myDetailsSplitText_3");
+
+gsap.from(myDetailsTitle_3, {
+  delay: 0.5,
+  y: 30,
+  stagger: 0.02,
+  opacity: 0,
+  ease: "back.out",
+  duration: 1,
+  scrollTrigger: {
+    scroller: "[data-scroll-container]",
+    trigger: "#myDetailsSplitText_3",
+    start: "top 80%",
+    end: "bottom top",
+    // scrub: true
+  }
+});
+
+
+// >> Ex spliTtext
+let exSPlitText = new SplitText("#experienceSectionSplitText2", { type: "words,chars" });
+
+gsap.from(exSPlitText.chars, {
+  delay: 0.5,
+y: 50,
+stagger: 0.01,
+ease: "back.out",
+opacity: 0,
+duration: 0.8,
+  scrollTrigger: {
+    scroller: "[data-scroll-container]",
+    trigger: "#experienceSectionSplitText2",
+    markers: true,
+    start: "top 80%",
+    end: "bottom top",
+    // scrub: true
+  }
+});
 
 
 
@@ -118,10 +226,4 @@ setupSplits();
 
 
 
-
-
-
-
-
-  
 })

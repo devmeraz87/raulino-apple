@@ -20,7 +20,7 @@
 
             ._ultra_hd_heading {
                 font-family: "prata";
-                font-size: 65px;
+                font-size: 70px;
                 color: #2E2A28;
                 pointer-events: none;
             }
@@ -40,6 +40,7 @@
                 font-size: 65px;
                 font-family: "prata";
                 color: #2E2A28;
+                line-height: 1.2;
             }
 
             ._lead {
@@ -108,21 +109,31 @@
 
      .carousel_indicator {
         display: flex;
+        position: relative;
         margin-bottom: 1.5rem;      
         margin-right: 20px;
-        box-shadow: 0 0.15rem 0  #6C6056;
+        // box-shadow: 0 0.15rem 0  #6C6056;
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 0.15rem;
+            width: 100%;
+            background-color: #6C6056;
+            bottom: 0;
+        }
     
         .carousel_dot {
             flex: 1;
             border: none;
-            padding: 0.2rem;
-            padding-top: 0.4rem;
+            padding: 0.5rem 0;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
             transition: 0.3s;
-            font-size: 25px;
+            font-size: 32px;
             font-family: "prata";
             text-align: center;
             color: #6C6056;
@@ -147,12 +158,14 @@
        cursor: pointer;
  
        svg {
-          height: 50px;
-          width: 50px;
+          height: 75px;
+          width: 75px;
           color: #6C6056;
        }
     }
  }
+
+
  
  
  
@@ -255,7 +268,7 @@
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.096);
     padding: 4rem 3rem;
     box-sizing: border-box;
-    max-width: 410px;
+    max-width: 500px;
     text-align: start;
 
 
@@ -270,11 +283,12 @@
         font-family: "poppins";
         color: #6C6056;
         margin-bottom: 1.5rem;
+        line-height: 2;
     }
 
     .carousel_btn {
         display: inline-block;
-        padding: 0.4rem 1.5rem;
+        padding: 0.75rem 1.5rem;
         border: 1px solid #6C6056;
         border-radius: 30px;
         text-transform: uppercase;
@@ -290,3 +304,173 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
  }
+
+
+
+
+
+
+ .grid_item {
+    position: relative;
+ }
+
+
+._lipo_grid_status_dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+
+    .status_item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        
+    }
+}
+
+
+.status_item_1_1 {
+    right: 10%;
+    top: 40%;
+}
+
+.status_item_1_2 {
+    left: 52%;
+    top: 52%;
+}
+.status_item_1_3 {
+    left: 28%;
+    top: 52%;
+}
+
+
+
+.status_item_2_1 {
+    right: 28%;
+    top: 35%;
+}
+
+.status_item_2_2 {
+    left: 52%;
+    top: 52%;
+}
+
+
+.status_item_2_3 {
+    left: 58%;
+    top: 70%;
+}
+
+
+
+.status_item_3_1 {
+    top: 25%;
+    right: 42%;
+}
+
+.status_item_3_2 {
+    right: 18%;
+    top: 40%;
+}
+
+
+.status_item_3_3 {
+    right: 24%;
+    bottom: 28%;
+}
+
+
+.status_item_4_1 {
+    bottom: 30%;
+    left: 25%;
+}
+
+.status_item_4_2 {
+    right: 49%;
+    top: 50%;
+}
+
+.status_item_4_3 {
+    right: 24%;
+    bottom: 30%;
+}
+
+
+
+.status_item_5_1 {
+    bottom: 30%;
+    right: 38%;
+}
+
+.status_item_5_2 {
+    right: 45%;
+    top: 52%;
+}
+
+.status_item_5_3 {
+    right: 25%;
+    bottom: 50%;
+}
+
+
+
+.status_item_6_1 {
+    left: 38%;
+    bottom: 22%;
+}
+
+.status_item_6_2 {
+    right: 38%;
+    bottom: 15%;
+}
+
+.status_item_6_3 {
+    right: 12%;
+    bottom: 45%;
+}
+
+// >> lipo status
+$size: 15px;
+$border: 10px;
+
+
+
+.status {
+  position: absolute;
+  display: inline-block;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background: #F1EAE3;
+  cursor: pointer;
+
+  
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -33%;
+    top: -33%;
+    width: $size + $border;
+    height: $size + $border;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite ease-in;
+    background-color: #F1EAE3;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}

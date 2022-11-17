@@ -62,20 +62,32 @@ window.addEventListener("load", function () {
   // >> Alhamdulillah
 
 
+gsap.from("._about_doctor", {
+  y: 100,
+  duration: 1,
+  opacity: 0,
+  scrollTrigger : {
+    scroller: "[data-scroll-container",
+    trigger: "._about_doctor",
+    start: "top 80%",
+    // scrub: true, 
+    // markers: true
+},
+})
 
-  gsap.from("._about_doctor", {
-    y: 100,
-    duration: 1,
-    opacity: 0,
-    scrollTrigger : {
-      scroller: "[data-scroll-container",
-      trigger: "._about_doctor",
-      start: "top 80%",
-      // scrub: true, 
-      // markers: true
+
+gsap.to("._lang_flags", {
+  scrollTrigger: {
+    scroller: "[data-scroll-container]",
+      trigger: "._about",
+      scrub: true,
+      end: "+=100px",
   },
-  })
 
+  y: -100,
+  opacity: 0,
+  duration: 1,
+})
 
 
 

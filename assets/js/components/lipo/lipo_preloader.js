@@ -14,7 +14,7 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
     function imgLoaded(){
       c += 1;
       var perc = ((100/tot*c) << 0) +"%";
-      starter.innerHTML = "Eduardo";
+      starter.innerHTML = "DR EDUARDO F. RAULINO";
       prog.style.width = perc;
       if(c===tot) return doneLoading();
     }
@@ -22,7 +22,6 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
         setTimeout(function(){ 
             // >> remove loader
             gsap.to("#_first_loading", {duration: 1.5, delay: 1, ease: secondEase, height: "0%"});
-            gsap.to("#_second_loading", {duration: 1.5,   delay: 3, ease: secondEase, height: "0%"});
 
             // >> Animate hero text
             // >> Home split text start / 
@@ -32,7 +31,7 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
                   let SplitClient = new SplitText(target, { type: "words,chars" });
                   let chars = SplitClient.chars; //an array of all the divs that wrap each character
                   gsap.from(chars, {
-                    delay: 5,
+                    delay: 3,
                   y: 5,
                   stagger: 0.01,
                   ease: "back.out",
@@ -41,7 +40,6 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
                     scrollTrigger: {
                       scroller: "[data-scroll-container]",
                       trigger: target,
-                      markers: true,
                       start: "top 80%",
                       end: "bottom top",
                     }
@@ -55,7 +53,7 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
 
             const hero_btn = this.document.querySelector("#_js_hero_btn");
             gsap.from(hero_btn, {
-                delay: 5.5,
+                delay: 3,
                 duration: 1,
                 opacity: 0, 
                 y: 100,
@@ -64,7 +62,7 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
 
             const hero_circle = this.document.querySelector("#_js_hero_circle");
             gsap.from(hero_circle, {
-                delay: 5.5,
+                delay: 3,
                 duration: 1,
                 opacity: 0, 
                 y: 100,
