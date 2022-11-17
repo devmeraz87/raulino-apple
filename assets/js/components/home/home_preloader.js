@@ -20,58 +20,54 @@ const secondEase = CustomEase.create("custom", "M0,0 C0.266,0.412 0.523,0.301 0.
       }
       function doneLoading(){
         setTimeout(function(){ 
-            // >> remove loader
-            gsap.to("#_first_loading", {duration: 1.5, delay: 1, ease: secondEase, height: "0%"});
+          // >> remove loader
+          gsap.to("#_first_loading", {duration: 1.5, delay: 1, ease: secondEase, height: "0%"});
 
-
-            /* --- Split the text, Client Title --- */
-            function setupSplits() {
-                const targets = gsap.utils.toArray("._home_hero_split_");
-                targets.forEach((target) => {
+          // >> Animate hero text
+          // >> Home split text start / 
+          function setupSplits() {
+              const targets = gsap.utils.toArray("._home_hero_split_");
+              targets.forEach((target) => {
                 let SplitClient = new SplitText(target, { type: "words,chars" });
                 let chars = SplitClient.chars; //an array of all the divs that wrap each character
                 gsap.from(chars, {
-                    delay: 3,
-                y: 50,
+                  delay: 3,
+                y: 5,
                 stagger: 0.01,
                 ease: "back.out",
                 opacity: 0,
-                duration: 0.8,
-                    scrollTrigger: {
+                duration: 1,
+                  scrollTrigger: {
                     scroller: "[data-scroll-container]",
                     trigger: target,
-                    // markers: true,
                     start: "top 80%",
-                    end: "bottom center",
-                    // scrub: true
-                    }
+                    end: "bottom top",
+                  }
                 });
-                });
+              });
             }
             
             setupSplits();
-  
+            
 
 
+          const hero_btn = this.document.querySelector("#_js_hero_btn");
+          gsap.from(hero_btn, {
+              delay: 3,
+              duration: 1,
+              opacity: 0, 
+              y: 100,
+              ease: "Back.InOut",
+          })
 
-
-      const hero_btn = this.document.querySelector("#_js_hero_btn");
-      gsap.from(hero_btn, {
-          delay: 3,
-          duration: 1,
-          opacity: 0, 
-          y: 100,
-          ease: "Back.InOut",
-      })
-
-      const hero_circle = this.document.querySelector("#_js_hero_circle");
-      gsap.from(hero_circle, {
-          delay: 3,
-          duration: 1,
-          opacity: 0, 
-          y: 100,
-          ease: "Back.InOut",
-      })
+          const hero_circle = this.document.querySelector("#_js_hero_circle");
+          gsap.from(hero_circle, {
+              delay: 3,
+              duration: 1,
+              opacity: 0, 
+              y: 100,
+              ease: "Back.InOut",
+          })
 
       }, 500);
     }
