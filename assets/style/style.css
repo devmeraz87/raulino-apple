@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5 {
   overflow: hidden !important;
   display: inline-block;
   z-index: 999999;
+  transition: 0.3s;
 }
 ._ani_btn::before {
   pointer-events: none;

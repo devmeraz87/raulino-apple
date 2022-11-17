@@ -128,7 +128,7 @@ function setupSplits() {
     let chars = SplitClient.chars; //an array of all the divs that wrap each character
     gsap.from(chars, {
       delay: 0.5,
-    y: 50,
+    y: 30,
     stagger: 0.01,
     ease: "back.out",
     opacity: 0,

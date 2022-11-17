@@ -147,7 +147,7 @@ const myDetailsHeadingSPlitText = new SplitText(myDetailsheading, {type: "words,
 
 gsap.from(myDetailsHeadingSPlitText.chars, {
   delay: 0.5,
-  y: 50,
+  y: 30,
   stagger: 0.01,
   ease: "back.out",
   opacity: 0,
