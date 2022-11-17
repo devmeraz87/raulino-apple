@@ -445,7 +445,7 @@ $border: 10px;
   width: $size;
   height: $size;
   border-radius: 50%;
-  background: #F1EAE3;
+  background: #fff  ;
   cursor: pointer;
 
   
@@ -459,7 +459,7 @@ $border: 10px;
     height: $size + $border;
     border-radius: 50%;
     animation: pulse 1.5s infinite ease-in;
-    background-color: #F1EAE3;
+    background-color: #fff  ;
   }
 }
 
@@ -473,4 +473,16 @@ $border: 10px;
     transform: scale(1.5);
     opacity: 0;
   }
+}
+
+.event_all  {
+    pointer-events: all;
+}
+
+._video_card {
+    transition: 2s ease-in-out;
+}
+
+._transparent {
+    background: #333 !important;
 }

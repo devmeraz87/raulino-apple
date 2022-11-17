@@ -4,16 +4,24 @@ const video_1_play_btn = document.querySelector(".js_video_1_play_btn")
 const video_1_context = document.querySelector(".js_video_1_context");
 const video_1_close_btn = document.querySelector("._video_1_pause_btn");
 const video_1_close_btn_icon = video_1_close_btn.querySelector("._video_1_icon");
+const video_bg_card = document.querySelector("._video_card")
 
 const videoOverlay = document.querySelector("._overlay");
 
+const iframe = document.getElementById('video_1_frame');
+
+const player = $f(iframe);
 
 video_1_play_btn.addEventListener("click", () => {
 
 
   videoOverlay.classList.add("_eventNone")
   video_1_context.classList.add("_eventNone")
+  video_bg_card.classList.add("_transparent");
 
+  setTimeout(() => {
+    player.api("play");
+  }, 500);
 
 
     gsap.to(homeVideo_1, {
@@ -50,8 +58,13 @@ video_1_close_btn.addEventListener("click", () => {
   })
 
 
+  setTimeout(() => {
+    player.api("pause");
+  }, 500);
+
   videoOverlay.classList.remove("_eventNone")
   video_1_context.classList.remove("_eventNone")
+  video_bg_card.classList.remove("_transparent");
 
 })
 
@@ -67,9 +80,12 @@ const video_2_close_btn_icon = video_2_close_btn.querySelector("._video_2_icon")
 
 video_2_play_btn.addEventListener("click", () => {
 
+
     homeVideo_2.play();
     homeVideo_2.setAttribute("loop", "true");
     video_2_close_btn.classList.add("_active");
+    video_bg_card.classList.add("_transparent");
+
 
     gsap.to(video_2_play_btn, {
       opacity: 0,
@@ -86,6 +102,7 @@ video_2_play_btn.addEventListener("click", () => {
 video_2_close_btn.addEventListener("click", () => {
 
   video_2_close_btn.classList.remove("_active");
+  
   
   gsap.to(video_2_play_btn, {
     opacity: 1,

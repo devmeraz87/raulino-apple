@@ -134,6 +134,7 @@ gsap.from(ultraHd_1_splitText.lines, {
 })
 
 
+// > ultra hd heading
 let ultraHd_2 = document.querySelector("#ultra_hd_hading");
 let ultraHd_2_splitText = new SplitText(ultraHd_2, {type: "words, chars"});
 
@@ -154,6 +155,7 @@ gsap.from(ultraHd_2_splitText.chars, {
 })
 
 
+// >> ultra hd title 2
 let ultraHd_3 = document.querySelector("#ultra_hd_title_2");
 let ultraHd_3_splitText = new SplitText(ultraHd_3, {type: "lines, words, chars"});
 
@@ -177,6 +179,16 @@ gsap.from(ultraHd_3_splitText.lines, {
 
 
 
+gsap.from("#ultra_hd_btn", {
+  y: 100,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: "[data-scroll-container]",
+    trigger: "#ultra_hd_btn",
+    start: "top 80%",
+  }
+
+})
 
 
 

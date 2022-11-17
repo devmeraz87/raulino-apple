@@ -1745,7 +1745,7 @@ h1, h2, h3, h4, h5 {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #F1EAE3;
+  background: #fff;
   cursor: pointer;
 }
 .status:before {
@@ -1759,7 +1759,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 50%;
   -webkit-animation: pulse 1.5s infinite ease-in;
           animation: pulse 1.5s infinite ease-in;
-  background-color: #F1EAE3;
+  background-color: #fff;
 }
 
 @-webkit-keyframes pulse {
@@ -1783,6 +1783,18 @@ h1, h2, h3, h4, h5 {
     opacity: 0;
   }
 }
+.event_all {
+  pointer-events: all;
+}
+
+._video_card {
+  transition: 2s ease-in-out;
+}
+
+._transparent {
+  background: #333 !important;
+}
+
 ._footer {
   background-color: #2D2824;
 }
