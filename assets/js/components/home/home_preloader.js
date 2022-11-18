@@ -39,12 +39,9 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
                 ease: "back.out",
                 opacity: 0,
                 duration: 1,
-                  scrollTrigger: {
-                    scroller: "[data-scroll-container]",
-                    trigger: target,
-                    start: "top 80%",
-                    end: "bottom top",
-                  }
+                onComplete: () => {
+                  SplitClient.revert();
+                }
                 });
               });
             }
