@@ -285,6 +285,8 @@
                 height: 100%;
                 position: absolute;
 
+
+    
                 
                 ._video_content {
                     top: 60%;
@@ -292,6 +294,17 @@
                     right: -10%;
                     width: 60%;
                     transform: translateY(-50%);
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    #video_2_frame{
+                        position: absolute;
+                        top: 0;
+                        opacity: 0;
+                    }
 
 
                     @media only screen and (max-width: 1366px) {

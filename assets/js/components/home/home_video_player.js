@@ -72,23 +72,40 @@ video_1_close_btn.addEventListener("click", () => {
 
 
 // >> Hoem video 2
-const homeVideo_2 = document.querySelector("._js_video_2");
 const video_2_play_btn = document.querySelector("._js_video_2_play_btn")
 const video_2_close_btn = document.querySelector("._video_2_close_btn");
 const video_2_close_btn_icon = video_2_close_btn.querySelector("._video_2_icon");
+const video_2_img = document.querySelector(".video_2_img");
+
+const iframe2 = document.getElementById('video_2_frame');
+
+const player2 = $f(iframe2);
 
 
 video_2_play_btn.addEventListener("click", () => {
 
 
-    homeVideo_2.play();
-    homeVideo_2.setAttribute("loop", "true");
+  setTimeout(() => {
+    player2.api("play");
+  }, 500);
+
+
+  gsap.to(video_2_img, {
+    opacity: 0,
+    duration: 1
+  })
+
     video_2_close_btn.classList.add("_active");
-    video_bg_card.classList.add("_transparent");
 
 
     gsap.to(video_2_play_btn, {
       opacity: 0,
+      duration: 1,
+    })
+
+
+    gsap.to(iframe2, {
+      opacity: 1,
       duration: 1,
     })
 
@@ -102,6 +119,12 @@ video_2_play_btn.addEventListener("click", () => {
 video_2_close_btn.addEventListener("click", () => {
 
   video_2_close_btn.classList.remove("_active");
+
+
+  gsap.to(video_2_img, {
+    opacity: 1,
+    duration: 1
+  })
   
   
   gsap.to(video_2_play_btn, {
@@ -115,9 +138,16 @@ video_2_close_btn.addEventListener("click", () => {
   })
 
 
+  gsap.to(iframe2, {
+    opacity: 0,
+    duration: 1,
+  })
+
+
   setTimeout(() => {
-    homeVideo_2.pause();
-  }, 1000);
+    player2.api("pause");
+  }, 500);
+
 })
 
 

@@ -2456,6 +2456,16 @@ h1, h2, h3, h4, h5 {
   width: 60%;
   transform: translateY(-50%);
 }
+._third_figure ._third_figure_content ._image_and_video ._video_container ._video_content img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+._third_figure ._third_figure_content ._image_and_video ._video_container ._video_content #video_2_frame {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
 @media only screen and (max-width: 1366px) {
   ._third_figure ._third_figure_content ._image_and_video ._video_container ._video_content {
     right: 0;
