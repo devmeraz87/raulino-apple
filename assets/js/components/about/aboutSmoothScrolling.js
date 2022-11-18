@@ -103,17 +103,20 @@ function setupSplits() {
     let chars = SplitClient.chars; //an array of all the divs that wrap each character
     gsap.from(chars, {
       delay: 0.5,
-    y: 50,
-    stagger: 0.01,
-    ease: "back.out",
-    opacity: 0,
-    duration: 0.8,
+      y: 50,
+      stagger: 0.01,
+      ease: "back.out",
+      opacity: 0,
+      duration: 0.8,
       scrollTrigger: {
         scroller: "[data-scroll-container]",
         trigger: target,
         start: "top 80%",
         end: "bottom top",
         // scrub: true
+      },
+      onComplete: () => {
+        SplitClient.revert();
       }
     });
   });
@@ -137,7 +140,6 @@ gsap.from(myDetailsTitle, {
     trigger: "#myDetailsSplitText_1",
     start: "top 80%",
     end: "bottom top",
-    // scrub: true
   }
 });
 
@@ -156,7 +158,9 @@ gsap.from(myDetailsHeadingSPlitText.chars, {
     trigger: myDetailsheading,
     start: "top 80%",
     end: "bottom top",
-    // scrub: true
+  },
+  onComplete: () => {
+    myDetailsHeadingSPlitText.revert();
   }
 });
 

@@ -37,129 +37,6 @@ h1, h2, h3, h4, h5 {
   font-family: "prata";
 }
 
-.mf-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 250;
-  direction: ltr;
-  contain: layout style size;
-  pointer-events: none;
-  z-index: 99999999;
-  transition: opacity 0.3s, color 0.4s;
-}
-.mf-cursor:before {
-  content: "";
-  position: absolute;
-  top: -24px;
-  left: -24px;
-  display: block;
-  width: 48px;
-  height: 48px;
-  transform: scale(0.2);
-  background: rgba(27, 9, 54, 0.363);
-  border-radius: 50%;
-  transition: transform 0.25s ease-in-out, opacity 0.1s;
-}
-.mf-cursor.-inverse {
-  color: aqua;
-}
-@supports (mix-blend-mode: exclusion) {
-  .mf-cursor.-exclusion {
-    mix-blend-mode: exclusion;
-  }
-  .mf-cursor.-exclusion:before {
-    background: aqua;
-  }
-}
-.mf-cursor.-pointer:before {
-  transform: scale(0.15);
-}
-.mf-cursor.-text:before {
-  opacity: 0.85;
-  transform: scale(1.7);
-}
-.mf-cursor.-text.-active:before {
-  transform: scale(1.6);
-  transition-duration: 0.2s;
-}
-.mf-cursor.-icon:before {
-  transform: scale(1.05);
-  background: rgba(45, 53, 117, 0.459);
-}
-.mf-cursor.-icon.-active:before {
-  transform: scale(1.4);
-}
-.mf-cursor.-hidden:before {
-  transform: scale(0);
-}
-.mf-cursor-text {
-  position: absolute;
-  top: -18px;
-  left: -18px;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0) rotate(10deg);
-  opacity: 0;
-  color: #fff;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  transition: opacity 0.4s, transform 0.3s;
-}
-.mf-cursor.-text .mf-cursor-text, .mf-cursor.-icon .mf-cursor-text {
-  opacity: 1;
-  transform: scale(1);
-}
-.mf-cursor-media {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  margin: -200px 0 0 -200px;
-}
-.mf-cursor-media._Meraj {
-  height: 50px;
-  width: 50px;
-  margin: -25px 0 0 -25px;
-}
-.mf-cursor-media img, .mf-cursor-media video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-}
-@supports ((-o-object-fit: cover) or (object-fit: cover)) {
-  .mf-cursor-media img, .mf-cursor-media video {
-    position: static;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    transform: translateZ(0);
-  }
-}
-.mf-cursor-media-box {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transform: scale(0) translateZ(0);
-  padding: 1px;
-  opacity: 0;
-  border-radius: 50%;
-  transition: transform 0.35s, opacity 0.2s 0.2s;
-}
-.mf-cursor.-media .mf-cursor-media-box {
-  opacity: 1;
-  transform: scale(0.696);
-  transition-duration: 0.4s, 0.4s;
-  transition-delay: 0s, 0s;
-}
-
 .mainNav {
   position: fixed;
   top: 0;
@@ -323,6 +200,10 @@ h1, h2, h3, h4, h5 {
   transition: 0.5s;
   height: 100%;
   bottom: 0;
+}
+
+._document_locked {
+  overflow: hidden !important;
 }
 
 ._offCanva {
@@ -562,6 +443,12 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   padding: 14rem 0;
   pointer-events: none;
+}
+@media only screen and (max-width: 1024px) {
+  ._about ._about_content {
+    padding: 8rem 0;
+    padding-bottom: 5rem;
+  }
 }
 ._about ._about_content ._about_title {
   font-size: 20px;
@@ -1022,7 +909,7 @@ h1, h2, h3, h4, h5 {
 ._about_doctor {
   position: relative;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
   ._about_doctor ._about_doctor_photo {
     padding-top: 5rem;
   }
@@ -1062,10 +949,10 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1024px) {
   ._about_doctor ._about_doctor_details {
-    position: static;
     padding: 5rem 0;
+    position: static;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1330,6 +1217,11 @@ h1, h2, h3, h4, h5 {
   font-size: 65px;
   font-family: "prata";
   color: #2E2A28;
+}
+@media only screen and (max-width: 1024px) {
+  ._Experience ._experience_content_header ._experience_content_heading {
+    font-size: 55px;
+  }
 }
 ._Experience ._collaps .collapsible .accordion_content {
   border-top: 1px solid #BF9B7A;
@@ -1973,6 +1865,11 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 2.5rem;
   color: #F1EAE3;
   text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  ._testimonials ._testimoniasl_container .swiper .swiper-slide ._slide_content ._main_context {
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 991px) {
   ._testimonials ._testimoniasl_container .swiper .swiper-slide ._slide_content ._main_context {

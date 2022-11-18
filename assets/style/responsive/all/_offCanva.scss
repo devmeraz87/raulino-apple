@@ -1,25 +1,24 @@
 @media only screen and (min-width: 1201px) and (max-width: 1366px) {
-    ._offCanva {
+    // ._offCanva {
 
-        ._offCanvaContent {
-
-
-            ._offCanva_left_and_right_container {
-
-                ._gsap_offCanvaRight {
-                    // display: none;
-                }
-            }
+    //     ._offCanvaContent {
 
 
-            ._gsap_offCanva_links {
+    //         // ._offCanva_left_and_right_container {
+
+    //         //     // ._gsap_offCanvaRight {
+    //         //     //     // display: none;
+    //         //     // }
+    //         // }
 
 
-            }
-        }
-    }
+    //         // ._gsap_offCanva_links {
+
+
+    //         // }
+    //     }
+    // }
 }
-
 
 @media only screen and (max-width: 1366px) and (max-height: 768px) {
     
@@ -197,6 +196,8 @@
 
 
 
+
+
 @media only screen and (min-width: 360px) and (max-width: 768px) {
     ._offCanva {
 
@@ -239,6 +240,20 @@
                     }
 
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-height: 667px) {
+    ._links {
+        margin-top: 1rem;
+        margin-bottom: 2rem !important;
+
+        ._links_item {
+
+            a {
+                font-size: 36px; 
             }
         }
     }

@@ -58,8 +58,7 @@ window.addEventListener("load", function () {
   })
 
 
-
-  // >> Alhamdulillah
+// >> Alhamdulillah
 
 
 gsap.from("._about_doctor", {
@@ -70,8 +69,6 @@ gsap.from("._about_doctor", {
     scroller: "[data-scroll-container",
     trigger: "._about_doctor",
     start: "top 80%",
-    // scrub: true, 
-    // markers: true
 },
 })
 
@@ -101,7 +98,6 @@ gsap.to("._marquee_section", {
     trigger: "._marquee_section",
     start: "top bottom",
     scrub: true, 
-    // markers: true
   },
 })
 
@@ -113,7 +109,6 @@ gsap.to(".wrapper_img_card", {
     trigger: ".wrapper_img_card",
     start: "top bottom",
     scrub: true, 
-    // markers: true
   },
 })
 
@@ -128,27 +123,25 @@ function setupSplits() {
     let chars = SplitClient.chars; //an array of all the divs that wrap each character
     gsap.from(chars, {
       delay: 0.5,
-    y: 30,
-    stagger: 0.01,
-    ease: "back.out",
-    opacity: 0,
-    duration: 0.8,
+      y: 30,
+      stagger: 0.01,
+      ease: "back.out",
+      opacity: 0,
+      duration: 0.8,
       scrollTrigger: {
         scroller: "[data-scroll-container]",
         trigger: target,
-        // markers: true,
         start: "top 80%",
         end: "bottom center",
-        // scrub: true
+      },
+      onComplete: () => {
+        SplitClient.revert();
       }
     });
   });
 }
 
 setupSplits();
-
-
-
 
 
 
@@ -165,8 +158,6 @@ gsap.from("._counter_ani", {
   scrollTrigger: {
     scroller: "[data-scroll-container]",
     trigger: "._counter_ani",
-    // start: "100px 80%",
-    // end: "+=100",
     toggleActions: "play none none reverse",
   }
 });

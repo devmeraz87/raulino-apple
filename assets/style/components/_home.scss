@@ -6,7 +6,7 @@
 ._about_doctor {
     position: relative;
 
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1024px) {
 
         ._about_doctor_photo {
             padding-top: 5rem;
@@ -33,9 +33,9 @@
         align-items: center;
         justify-content: flex-end;
 
-        ._about_doctor_img_left {
-            // flex: 1;
-        }
+        // ._about_doctor_img_left {
+        //     // flex: 1;
+        // }
         ._about_doctor_img_right {
             display: flex;
             align-items: center;
@@ -60,9 +60,9 @@
         height: 100%;
         width: 100%;
 
-        @media only screen and (max-width: 991px) {
-            position: static;
+        @media only screen and (max-width: 1024px) {
             padding: 5rem 0;
+            position: static;
         }
 
         @media only screen and (max-width: 768px) {
