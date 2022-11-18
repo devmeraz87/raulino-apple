@@ -439,6 +439,10 @@ h1, h2, h3, h4, h5 {
   border-color: #D9C4B0;
   color: #2E2A28;
 }
+._hero ._hero_content ._circle_logo_selo img {
+  height: 186px;
+}
+
 ._about ._about_content {
   text-align: center;
   padding: 14rem 0;

@@ -84,7 +84,7 @@
             ._circle_logo_selo{
 
                 img {
-                    height: 150px !important;
+                    height: 150px;
                 }
             }
         }
@@ -339,15 +339,8 @@
             justify-content: center;
 
             img {
-                height: 120px !important;
+                height: 140px !important;
             }
         }
     }
 }
-
-
-// @media only screen and (max-width: 450px) {
-//     ._hero {
-//         background-position: 85% top !important;
-//     }
-// }
