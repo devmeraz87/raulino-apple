@@ -1908,6 +1908,10 @@ h1, h2, h3, h4, h5 {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+  transition: 0.3s;
+}
+._footer ._footer_social a:hover i {
+  fill: #6C6056;
 }
 
 ._footer_section_horizontal {

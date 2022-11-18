@@ -118,6 +118,15 @@
                 fill: #d9c4b0;
                 user-select: none;
                 pointer-events: none;
+                transition: 0.3s;
+
+            }
+
+            
+            &:hover {
+              i {
+                fill: #6C6056;
+              }
             }
         }
     }
