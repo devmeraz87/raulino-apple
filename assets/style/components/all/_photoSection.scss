@@ -355,7 +355,7 @@
                     ._video_2_close_btn {
                         position: absolute;
                         right: 20px;
-                        top: 20px;
+                        top: 60px;
                         height: 30px;
                         width: 30px;
                         z-index: 9999999;
@@ -363,6 +363,11 @@
                         align-items: center;
                         justify-content: center;
                         overflow: hidden;
+
+                        @media only screen and (max-width: 768px) {
+                            top: 35px;
+                            
+                        }
 
                         pointer-events: none;
 

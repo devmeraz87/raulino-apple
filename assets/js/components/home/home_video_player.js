@@ -85,6 +85,9 @@ const player2 = $f(iframe2);
 video_2_play_btn.addEventListener("click", () => {
 
 
+  video_2_close_btn.classList.add("_active");
+
+
   setTimeout(() => {
     player2.api("play");
   }, 500);
@@ -94,8 +97,6 @@ video_2_play_btn.addEventListener("click", () => {
     opacity: 0,
     duration: 1
   })
-
-    video_2_close_btn.classList.add("_active");
 
 
     gsap.to(video_2_play_btn, {
