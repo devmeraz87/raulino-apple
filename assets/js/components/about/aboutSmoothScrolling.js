@@ -111,7 +111,6 @@ function setupSplits() {
       scrollTrigger: {
         scroller: "[data-scroll-container]",
         trigger: target,
-        markers: true,
         start: "top 80%",
         end: "bottom top",
         // scrub: true
@@ -155,7 +154,6 @@ gsap.from(myDetailsHeadingSPlitText.chars, {
   scrollTrigger: {
     scroller: "[data-scroll-container]",
     trigger: myDetailsheading,
-    markers: true,
     start: "top 80%",
     end: "bottom top",
     // scrub: true
@@ -185,24 +183,25 @@ gsap.from(myDetailsTitle_3, {
 
 
 // >> Ex spliTtext
-let exSPlitText = new SplitText("#experienceSectionSplitText2", { type: "words,chars" });
+const expreance_items = gsap.utils.toArray(".accordion_content");
 
-gsap.from(exSPlitText.chars, {
-  delay: 0.5,
-y: 50,
-stagger: 0.01,
-ease: "back.out",
-opacity: 0,
-duration: 0.8,
-  scrollTrigger: {
-    scroller: "[data-scroll-container]",
-    trigger: "#experienceSectionSplitText2",
-    markers: true,
-    start: "top 80%",
-    end: "bottom top",
-    // scrub: true
-  }
-});
+expreance_items.forEach((items) => {
+  gsap.from(items, {
+    delay: 0.5,
+    y: 50,
+    ease: "back.out",
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      scroller: "[data-scroll-container]",
+      trigger: ".accordion_content",
+      start: "top 80%",
+      end: "bottom top",
+    }
+  });
+})
+
+
 
 
 

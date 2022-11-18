@@ -137,6 +137,11 @@
             font-family: "prata";
             text-align: center;
             color: #6C6056;
+
+            @media only screen and (max-width: 768px) {
+                font-size: 26px;
+                padding: 0.4 0;
+            }
     
             &.carousel_dot__active {
                 color: #F1EAE3;

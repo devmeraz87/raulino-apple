@@ -1482,6 +1482,12 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   color: #6C6056;
 }
+@media only screen and (max-width: 768px) {
+  ._section_carousel .carousel_indicator .carousel_dot {
+    font-size: 26px;
+    padding: 0.4 0;
+  }
+}
 ._section_carousel .carousel_indicator .carousel_dot.carousel_dot__active {
   color: #F1EAE3;
   background-color: #6C6056;
